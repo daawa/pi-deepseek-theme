@@ -41,4 +41,8 @@ The value before `/` is used for light terminal backgrounds; the value after `/`
 
 ## How It Works
 
-Pi loads `deepseek-theme.ts` as an extension. Its `resources_discover` handler contributes the `themes/` directory during startup and `/reload`, making both theme files available to the session.
+On a cold start, pi first reads the package manifest and loads the files declared by `pi.themes`. This makes both themes available to the startup UI before pi resolves and applies the saved theme or the value passed to `--use-theme`.
+
+Pi loads `deepseek-theme.ts` later, while creating the normal extension runtime. After the extension is loaded and bound to the session, its `resources_discover` handler runs with a reason of `startup` (or `reload` after `/reload`). By then, cold-start theme selection has already happened, so themes registered only by this hook cannot provide the initial startup theme.
+
+The extension is retained as a minimal `resources_discover` API example. Its empty `themePaths` array intentionally contributes no additional resources; the package manifest is the actual source of both themes. Pi loads the TypeScript source directly, so this package does not contain a separate `deepseek-theme.js` file.
