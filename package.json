@@ -1,0 +1,25 @@
+{
+	"name": "deepseek-theme",
+	"version": "0.1.0",
+	"description": "Paired DeepSeek-inspired light and dark themes for pi",
+	"type": "module",
+	"files": [
+		"deepseek-theme.ts",
+		"themes",
+		"README.md"
+	],
+	"keywords": [
+		"pi-package",
+		"pi-theme",
+		"deepseek",
+		"theme"
+	],
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"pi": {
+		"extensions": [
+			"./deepseek-theme.ts"
+		]
+	}
+}
