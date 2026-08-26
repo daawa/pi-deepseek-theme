@@ -2,6 +2,8 @@
 	"name": "deepseek-theme",
 	"version": "0.1.0",
 	"description": "Paired DeepSeek-inspired light and dark themes for pi",
+	"author": "Alfie Zhang",
+	"license": "MIT",
 	"type": "module",
 	"files": [
 		"deepseek-theme.ts",
