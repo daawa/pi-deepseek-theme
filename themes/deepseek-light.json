@@ -18,7 +18,7 @@
 		"borderMuted": "#C8D0E3",
 		"selectedBg": "#DFE7FF",
 		"userMessageBg": "#F1F4FC",
-		"customMessageBg": "#F3F0FC",
+		"customMessageBg": "#C0C8EF",
 		"toolPendingBg": "#F5F7FC",
 		"toolSuccessBg": "#F2F8F5",
 		"toolErrorBg": "#FCF3F5"
