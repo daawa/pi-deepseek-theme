@@ -17,8 +17,8 @@
 		"dim": "#6B7690",
 		"borderMuted": "#C8D0E3",
 		"selectedBg": "#DFE7FF",
-		"userMessageBg": "#F1F4FC",
-		"customMessageBg": "#C0C8EF",
+		"userMessageBg": "#ADBFF1",
+		"customMessageBg": "#F3F0FC",
 		"toolPendingBg": "#F5F7FC",
 		"toolSuccessBg": "#F2F8F5",
 		"toolErrorBg": "#FCF3F5"
