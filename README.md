@@ -1,13 +1,15 @@
-# DeepSeek Themes for pi
+# Brand Themes for pi
 
-An extension package that provides paired DeepSeek-inspired light and dark themes for [pi](https://github.com/earendil-works/pi).
+An extension package that provides paired light and dark themes for [pi](https://github.com/earendil-works/pi), inspired by DeepSeek and WeChat brand colors.
 
-The package is unofficial and is not affiliated with or endorsed by DeepSeek.
+The package is unofficial and is not affiliated with or endorsed by DeepSeek or WeChat.
 
 ## Themes
 
 - `deepseek-light`: cool white surfaces with readable, restrained DeepSeek-blue accents.
 - `deepseek-dark`: dark navy surfaces with DeepSeek-blue accents and low-contrast tool backgrounds.
+- `wechat-light`: airy green-tinted surfaces with readable WeChat-green accents.
+- `wechat-dark`: deep green-black surfaces with WeChat-green accents and low-contrast tool backgrounds.
 
 ## Install
 
@@ -35,6 +37,7 @@ Select either theme through `/settings`, or let pi follow the terminal appearanc
 
 ```bash
 pi --use-theme deepseek-light/deepseek-dark
+pi --use-theme wechat-light/wechat-dark
 ```
 
 The value before `/` is used for light terminal backgrounds; the value after `/` is used for dark backgrounds.

@@ -1,7 +1,7 @@
 {
 	"name": "deepseek-theme",
 	"version": "0.1.0",
-	"description": "Paired DeepSeek-inspired light and dark themes for pi",
+	"description": "Paired DeepSeek- and WeChat-inspired light and dark themes for pi",
 	"author": "Alfie Zhang",
 	"license": "MIT",
 	"type": "module",
@@ -14,6 +14,7 @@
 		"pi-package",
 		"pi-theme",
 		"deepseek",
+		"wechat",
 		"theme"
 	],
 	"peerDependencies": {
