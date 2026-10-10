@@ -7,6 +7,13 @@ export default function deepseekThemeExtension(pi: ExtensionAPI): void {
 		themePaths: [],
 	}));
 
+	// Append a file-path convention to the per-turn system prompt. The base
+	// prompt is rebuilt each turn, so appending once here is safe and does not
+	// accumulate across turns.
+	pi.on("before_agent_start", async (event) => ({
+		systemPrompt: `${event.systemPrompt}\n\nWhen mentioning a file, use the path relative to the current working directory.`,
+	}));
+
 	// /name for RPC mode. Registering it unconditionally would trip the TUI's
 	// built-in command conflict warning in interactive mode, where the built-in
 	// /name already shadows it. RPC has no built-in commands, so register only
